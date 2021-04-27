@@ -31,7 +31,7 @@ console.log(noop()) // undefined
 
 Exports:
 
-### below
+### noop
 
 `() => void`
 
