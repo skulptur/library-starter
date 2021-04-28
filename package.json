@@ -1,8 +1,14 @@
 {
+  "name": "library-name-fns",
   "version": "0.1.0",
+  "author": "skulptur",
   "license": "MIT",
+  "module": "dist/library-name-fns.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "keywords": [
+    "functional"
+  ],
   "files": [
     "dist",
     "src"
@@ -18,9 +24,6 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why"
-  },
-  "peerDependencies": {
-    "react": ">=16"
   },
   "husky": {
     "hooks": {
@@ -39,9 +42,6 @@
     "jsxSingleQuote": true,
     "arrowParens": "always"
   },
-  "name": "library-name-fns",
-  "author": "Gustavo Spredemann",
-  "module": "dist/library-name-fns.esm.js",
   "size-limit": [
     {
       "path": "dist/library-name-fns.cjs.production.min.js",
