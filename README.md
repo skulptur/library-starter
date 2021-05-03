@@ -1,6 +1,4 @@
-Tagline of up to 20 words here
-
-## Motivation
+## `library-name`
 
 Single paragraph about why this library exists
 
@@ -9,9 +7,9 @@ Single paragraph about why this library exists
 Install
 
 ```bash
-npm install --save library-name-fns
-# or
 yarn add library-name-fns
+# or
+npm install --save library-name-fns
 ```
 
 Use
@@ -26,7 +24,7 @@ console.log(noop()) // undefined
 
 ## API
 
-- Functions that can be pure, are pure.
+- Pure functions.
 - The argument order is optimized for partial application.
 
 Exports:
