@@ -1,1 +1,1 @@
-const example = () => {};
+const example = () => {}
