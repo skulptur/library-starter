@@ -1,4 +1,7 @@
 import { Box, Text } from '@mantine/core'
+import * as lib from '@skulptur/library-fns'
+
+console.log('library exports', lib)
 
 export type HomeProps = {}
 

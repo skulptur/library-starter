@@ -1,38 +1,41 @@
-## `library-name`
+# Lerna monorepo for Typescript codebase with tsconfig-paths + Lerna + symlinks
 
-Single paragraph about why this library exists
+The example shows how you can manage monorepo using [Lerna](https://github.com/lerna/lerna) monorepo package managing tool.
+In this example you can figure out how to:
 
-## Get started
+- Setup Lerna for [Typescript](https://www.typescriptlang.org/) codebase
+- Setup custom aliases on the server and the client
+- Make aliases work together with [Jest](https://jestjs.io/)
 
-Install
+The example shows how to handle all cases from above based only on the
+[tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths) + Lerna + symlinks
+solution.
+
+More detail you can find [here](https://webman.pro/blog/lerna-monorepo-typescript-react-node-worklow/#tsconfigpaths--lerna--symlinks).
+
+Monorepo consists of 3 packages:
+
+- [@skulptur/app](./packages/app)
+- [@skulptur/utils](./packages/utils)
+- [@skulptur/ui](./packages/ui)
+
+Install it and run:
+
+Development:
 
 ```bash
-yarn add library-name-fns
-# or
-npm install --save library-name-fns
+yarn
+cd packages/app
+yarn dev
 ```
 
-Use
+Production:
 
-```typescript
-import { noop } from 'library-name-fns'
-
-console.log(noop()) // undefined
+```bash
+yarn
+yarn app:build
+cd packages/app
+yarn start
 ```
 
-[Examples](https://github.com/skulptur/library-name-fns/tree/master/example)
-
-## API
-
-- Pure functions.
-- The argument order is optimized for partial application.
-
-Exports:
-
-### noop
-
-`() => void`
-
-```typescript
-const nothing = noop() // undefined
-```
+**Read more in the [article](https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/)**.
